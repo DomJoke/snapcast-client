@@ -8,7 +8,9 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         snapclient \
         alsa-utils \
-        libasound2 && \
+        libasound2 \
+        libasound2-plugins \
+        libportaudio2 && \
     rm -rf /var/lib/apt/lists/*
 
 # Create a non-root user
